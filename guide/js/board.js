@@ -66,7 +66,7 @@ if(params.get('name') == undefined){
 } else {
 // 해당 키워드의 글만 출력
 window.onload = () => {
-  axios.get('http://localhost:5500/json/guide.json')
+  axios.get('./json/guide.json')
   .then((res) => {
     // 키워드 박스 생성을 위한 html 변수
     let keywordsHTML = '';
